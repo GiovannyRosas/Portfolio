@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<title>{% block title %}{% endblock %} - Portafolio</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+<!--Font family-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inder&family=Ubuntu:ital,wght@0,300;0,500;1,700&display=swap" rel="stylesheet">
+
+<body>
+    <header>
+        <div class="logo">GIOVANNY</div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('portfolio.index')}}">Inicio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+    <div class="hero">
+        <div class="hero-content">
+            <div class="left">
+                <h1>¡Se ha enviado correctamente!.</h1>
+                <p>Gracias por interesarte en mi trabajo, estaremos en contacto.</p>
+            </div>
+            <div class="send center2">
+                <img src="{{ url_for('static', filename='mail.png')}}" width="600px">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <div class="footer">
+        <div class="center full-width">
+            <div class="row">
+                <h3>Contáctame :)</h3>
+            </div>
+        </div>
+        <div class="center full-width">
+            <div class="row">
+                <p>O también puedes seguirme en mis redes sociales</p>
+            </div>
+        </div>
+        <div class="center full-width social-links">
+            <div class="row">
+                <a href="" class="social"> <i class="fab fa-twitter"></i> </a>
+                <a href="" class="social"> <i class="fab fa-linkedin-in"></i> </a>
+                <a href="" class="social"> <i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="made-with"> 
+            <div class="row-made-with">
+                <p>Hecho con ❤ por Giovanny Rosas</p>
+            </div>
+        </div>
+    </div>
+</body>

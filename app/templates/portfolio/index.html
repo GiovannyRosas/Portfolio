@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Bienvenido{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <div class="hero-content">
+        <div class="left">
+            <h1>¡Hola!, soy Giovanny Rosas.</h1>
+            <h1>Desarrollador</h1>
+            <p>Construyo aplicaciones dinámicas en python usando bases de datos relacionales</p>
+            <a href="#contacto" class="btn">Contáctame</a>
+        </div>
+        <div class="right center2">
+            
+            <img src="{{ url_for('static', filename='foto-right.png')}}" width="600px">
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'portfolio/section-first.html' %}
+{% include 'portfolio/section-second.html' %}
+{% include 'portfolio/section-third.html' %}
+{% include 'portfolio/contact.html' %}
+
+
+{% endblock %}

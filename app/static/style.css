@@ -1,0 +1,295 @@
+*{
+    --color-principal:#8680BC;
+    --color-secundario: #B6BC80;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #efefef;
+    margin: 0;
+    color: var(--color-principal);
+}
+
+
+
+p {
+    font-family: 'Inder', sans-serif;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h3 {
+    font-family: 'Inder', sans-serif;
+}
+
+a{
+    transition: color 0.3s ease;
+    font-family: 'Inder', sans-serif;
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover {
+    color: var(--color-secundario);
+}
+
+header a {
+    color: #fff;
+}
+
+html body header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #444;
+    box-shadow: 3px 0 5px #aaa;
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+header .logo{
+    font-size: 20px;
+    font-family: 'Inder', sans-serif;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+html body nav ul{
+    list-style: none;
+    font-size: 16px;
+}
+
+html body nav ul li{
+    display: inline-block;
+}
+html body nav ul li a{
+    padding: 0 15px;
+}
+
+.hero{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    background-color: #fff;
+    padding: 20px 50px;
+    justify-content: center;
+}
+
+.hero .hero-content {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.hero h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.hero p {
+    margin-bottom: 50px;
+}
+
+.left {
+    width: 600px;
+    align-self: center;
+}
+
+.right{
+    width: 600px;
+}
+
+.btn {
+    background-color: #B6BC80;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a.btn{
+    color: #fff;
+    box-shadow: 2px 3px 2px #ddd;
+}
+
+.card-hero {
+    background-color: #333;
+    box-shadow: 0 1px 2px #ddd;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+.center2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.second h1{
+    text-align: center;
+}
+
+.brown{
+    color:  var(--color-secundario);
+}
+
+.padded {
+    padding: 20px 30px;
+}
+
+.vert-pad {
+ padding: 20px 0;   
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 1px 2px #ddd;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+.third {
+    width: 360px;
+    margin: 20px;
+
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/*    TECNOLOGÍAS  */
+
+.section-third {
+    background-color: #fff;
+}
+
+.section-third .card-tech i {
+    font-size: 200px;
+}
+
+.card-tech {
+    background-color: #333;
+    box-shadow: 0 1px 2px #ddd;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin: 15px;
+}
+
+/*///////////////////*/
+
+.contact p{
+    font-size: 16px;
+}
+
+.contact-form input{
+    font-family: 'Inder', sans-serif;
+    border: none ;
+    height: 30px;
+    width: calc(100% - 20px);
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.contact-form textarea{
+    font-family: 'Inder', sans-serif;
+    border: none;
+    height: 100px;
+    width: calc(100% - 20px);
+    resize: none;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+}
+
+.contact-form .btn {
+    width: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.footer {
+    padding: 40px 0 0 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.social-links{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.social-links a{
+    margin: 0 10px;
+}
+
+.social {
+    background-color: #fff;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.made-with { 
+    padding: 0 30px;
+    color: #555;
+}
+
+.row-made-with {
+    display: flex;
+    flex-direction: row;
+}
+
+.send {
+    transition: display .2s ease-in;
+}
